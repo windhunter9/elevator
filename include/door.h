@@ -8,7 +8,7 @@ class door
 {
     public:
         door();
-        act(int z);
+        void act(int z);
 
     protected:
 

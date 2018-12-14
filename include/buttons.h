@@ -10,7 +10,8 @@ class buttons
 {
     public:
         buttons();
-        act();
+        buttons(int d){};
+        void act();
 
     protected:
 

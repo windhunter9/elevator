@@ -14,7 +14,7 @@ class drive
     public:
 
         drive();
-        act(vector<int> &x, bool& drive);
+        int act(vector<int> &x, bool& drive);
 
         //virtual ~drive();
 

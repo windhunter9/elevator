@@ -3,15 +3,15 @@
 
 #include <string>
 #include <map>
-
+#include <cstdint>
 namespace tacopie{
  class tcp_client;
 }
 class model_client
 {
     public:
-        model_client(std::string ip_adress,std::uint32_t port);
-        ~model_client();
+        model_client(std::string ip_adress,std::uint32_t port){};
+    //    ~model_client();
         /**
         *\brief read from model
         *\param name of pin to read
