@@ -15,7 +15,7 @@ model_client elevator3("127.0.0.1",33001);
 door::door(){
 }
 
-door::act(int z)
+void door::act(int z)
 {
 string MTE = "MTE"+to_string(z); //assign the stings to the floors with a variable for the floor in order to keep the code flexible
 string MTA = "MTA"+to_string(z);
@@ -24,7 +24,7 @@ string TTA = "TTA"+to_string(z);
 string TTZ = "TTZ"+to_string(z);
 string PS = "PS"+to_string(z);
 string PA = "PA"+to_string(z);
-
+    /*
     while (elevator3.read(TTA)==0) //as long as door isnt fully open
     {
         button1.act();
@@ -58,5 +58,6 @@ string PA = "PA"+to_string(z);
     {
         act(z);
     }
+    */
 }
 

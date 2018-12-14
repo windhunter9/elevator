@@ -3,7 +3,7 @@
 #include "door.h"
 #include "buttons.h"
 #include <iostream>
-#include <windows.h>
+//#include <windows.h>
 #include <iterator>
 #include <vector>
 #include <algorithm>
@@ -23,15 +23,15 @@ door door1;
 drive::drive(){
 }
 
-drive::act(vector<int>&x, bool& upwards)
+int drive::act(vector<int>&x, bool& upwards)
 {
     //cout << "test";
     int i=0;
     int j=0;
     int target;
-    boolean direction = false;
+    bool direction = false;
     whereami();
-
+    /*
     if(upwards==true)
     {
         target=5;
@@ -101,10 +101,12 @@ drive::act(vector<int>&x, bool& upwards)
             door1.act(lastfloor);
             elevator1.write("LP"+to_string(j),0);
         }
+        */
 }
 
 void whereami()
 {usleep(5000000);
+    /*
     if (elevator1.read("TPM1") == 1)
     {
         lastfloor = 1;
@@ -121,6 +123,7 @@ void whereami()
     {
         lastfloor = 4;
     }
+    */
 }
 
 
